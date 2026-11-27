@@ -1,0 +1,19 @@
+{
+ "picked_by": "Claude, 2026-11-27, after the QA scan (Kai to confirm on the timeline)",
+ "picks": {
+  "s01-city-tower": "s01-city-tower-a",
+  "s02-floor-desk": "s02-floor-desk-r2-b",
+  "s03-floor-confetti": "s03-floor-confetti-a",
+  "s04-car-angle": "s04-car-angle-fix",
+  "s05-car-outside": "s05-car-outside-r2-b",
+  "s06-carpark-wide": "s06-carpark-wide-b",
+  "s07-bob-tent": "s07a-bob-tent-out-a",
+  "s08-aerial-two": "s08-aerial-two-a",
+  "s09-wake-pov": "s09-wake-pov-a",
+  "s10-tent-sit": "s10-tent-sit-a"
+ },
+ "alternates": {
+  "s07-bob-tent": "s07b-bob-tent-front-a/b (from outside the tent)"
+ },
+ "qa_overrides": "Waitrose fascia readable and BMW badges: allowed by Camping canon (badcode.md / look.md), so those QA fails are not faults"
+}

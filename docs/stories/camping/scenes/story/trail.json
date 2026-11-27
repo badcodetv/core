@@ -38,5 +38,13 @@
   "url": "http://localhost:8765/t/camping/story/",
   "what": "Cut r1 (5:29): Kai's 42 notes cut in; 23 new lines in the locked voices, kept lines cut from Jack's files at word boundaries; 11 cards mark the new shots still to make",
   "rebuild": "python3 scripts/camping/story-cut-r1.py"
+ },
+ {
+  "at": "2026-11-27T18:27:44+00:00",
+  "stage": "timeline",
+  "round": 2,
+  "url": "http://localhost:8765/t/camping/story/",
+  "what": "Cut r1 with the 10 new shots as stills (Nano Banana 2.1, Bob and Tarquin cast, QA-scanned, Claude's picks in r1-shots/picks-r1.json)",
+  "rebuild": "python3 scripts/camping/story-cut-r1.py"
  }
 ]

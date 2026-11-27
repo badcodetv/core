@@ -1,0 +1,152 @@
+[
+ {
+  "key": "s01-city-tower",
+  "why": "Kai r1: recut the opening as the City of London pushing in to the NatWest Tower; the old layout was wrong",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s01-city-tower.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nSubject: the City of London in 2008 seen from the air, looking east, with one tall dark office tower at the centre of the frame as the place the eye lands.\n\nEnvironment: in the lower left foreground, close to camera, a great domed stone cathedral with a lantern on top of its dome, among Portland-stone and red-brick blocks. Beyond it, in the middle of the frame, the tall tower: a 1980 office block built as three chevron-shaped shafts cantilevered around a central core, stepping down to three different heights, clad in bronze-dark glass with strong vertical ribbing and a slim lattice mast on the roof, by far the tallest thing in the City. A little further back and to its left stands one rounded glass tower with a diagonal diamond lattice, shorter than the dark tower. All around them the City is low and dense: six to ten storey blocks, church spires, flat grey roofs, rooftop plant, two construction cranes. Only a thin strip of grey river shows at the far right edge. No other tall towers anywhere.\n\nCamera: high aerial, about level with the dark tower's top third, looking slightly down and east along the City, the cathedral dome large in the near corner and the dark tower centred behind it. Deep focus.\n\nLighting: flat overcast winter morning, the sky an even pale grey, soft shadowless light on the stone.\n\nDetails: fine natural grain, distance haze over the far roofs, ordinary and unstyled. No readable lettering on any building.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "image"
+ },
+ {
+  "key": "s02-floor-desk",
+  "why": "Kai r1: trading-floor mania instead of the lift; scenes like the biro and the champagne mug, Wolf of Wall Street energy",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s02-floor-desk.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Fujicolor Superia 400 pushed one stop — fine natural grain, a green bias off the fluorescent light, muted and cool. Naturalistic motivated lighting only, no lens flares, calm observational tone.\n\nScene: the man from the reference images, on the same 2008 trading floor, is standing up on top of his desk among the monitors, both arms thrown up, a telephone handset still in one fist with its coiled cord pulled taut down to the desk, his mouth wide open mid-roar. Below him, at the next desks, two traders in shirtsleeves look up at him, one half out of his chair, one grinning with a phone at his ear.\n\nCamera: low, from the aisle at desk height, looking up at him, wide lens, the desk edge and a spilled stack of printouts in the near foreground.\n\nLighting: overhead fluorescent tubes, the screens' glow on the faces below.\n\nDetails: real skin texture, sweat at the collar, fine natural grain, ordinary and unstyled. Keep every screen and paper free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/36-1.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/39-1.png"
+  ]
+ },
+ {
+  "key": "s03-floor-confetti",
+  "why": "Kai r1: a second trading-floor mania shot (replaces the empty office)",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s03-floor-confetti.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Fujicolor Superia 400 pushed one stop — fine natural grain, a green bias off the fluorescent light, muted and cool. Naturalistic motivated lighting only, no lens flares, calm observational tone.\n\nScene: the man from the reference images, on the same 2008 trading floor, has just flung a double handful of torn trade tickets into the air above his head; the paper scraps are still falling around him like confetti. He is laughing with his head tipped back, his tie pulled loose. Beside him a colleague in shirtsleeves slaps the desk with an open palm, and behind them rows of traders are on their phones, still working.\n\nCamera: eye level, a few metres away across two desks, a monitor's dark edge in the near foreground on the left.\n\nLighting: overhead fluorescent tubes, flat and greenish.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled. Keep every screen and paper free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/36-1.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/39-1.png"
+  ]
+ },
+ {
+  "key": "s04-car-angle",
+  "why": "Kai r1: a different angle of Tarquin in the car, a real cut from the smile to the worry",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s04-car-angle.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone.\n\nScene: the man from the character reference is driving at night, in the same car interior as the reference image. His smile has just gone: the corners of his mouth have dropped back to flat, his brows have drawn slightly together and his eyes are fixed on the road ahead, unfocused, as if he has noticed something he does not want to have noticed. Both hands on the wheel.\n\nCamera: a different angle from the reference: from the passenger seat, side-on profile at his shoulder height, the dark passenger window and orange streetlight sliding past behind him.\n\nLighting: orange sodium streetlight through the windscreen moving across his face, the dashboard's low glow under his chin.\n\nDetails: real skin texture, visible pores, fine natural grain, ordinary and unstyled.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png"
+  ],
+  "character": "Tarquin"
+ },
+ {
+  "key": "s05-car-outside",
+  "why": "Kai r1: the car from outside at night, under the narrator's empathy line",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s05-car-outside.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone.\n\nScene: the black car from the second reference image drives slowly along a wet London street at night, seen from the pavement as it passes. Its gold-tinted headlights cut through a light drizzle. Through the side window the driver is only a dark shape lit faintly by the dashboard. On the pavement in the foreground a bus-stop shelter and a closed shopfront with its shutter down.\n\nCamera: eye level from the pavement, the car crossing the middle of the frame, a 35mm lens.\n\nLighting: orange streetlights, the wet road reflecting them, the headlights the warmest thing in the frame.\n\nDetails: fine natural grain, drizzle on the road, ordinary and unstyled. Keep the number plate, signs and shopfronts free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/10-3.5.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17.1-2.png"
+  ]
+ },
+ {
+  "key": "s06-carpark-wide",
+  "why": "Kai r1: a zoomed-out shot of the whole Waitrose car park, full of cars, the twin of the ending's wide",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s06-carpark-wide.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the same place and the same high camera position as the first reference image, but years earlier on an ordinary overcast weekday: the supermarket car park is in normal use, nearly every bay filled with parked cars, a few shoppers pushing trolleys between the rows, the glazed barrel-roofed trolley shelter in front of the store, the green store fascia reading Waitrose. In one bay near the trolley shelter stands a single small blue and grey dome tent, the only thing out of place.\n\nCamera: high, looking down across the whole car park towards the store front, wide, deep focus.\n\nLighting: flat overcast daylight, wet tarmac after rain.\n\nDetails: fine natural grain, ordinary and unstyled. No readable lettering except the store fascia.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/29-1.5.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/12-2.png"
+  ]
+ },
+ {
+  "key": "s07a-bob-tent-out",
+  "why": "Kai r1: Bob in the tent looking out, the wank tank parked in front (from inside)",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s07a-bob-tent-out.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the man from the character reference sits inside the tent from the reference image, seen from behind his shoulder, looking out through the open door flap. Filling the doorway, close enough to touch, the black car from the second reference image is parked across the bay, its glossy flank and one wheel blocking the view of the car park. His head is turned a little so we see the edge of his face: his jaw set, his eyes on the car.\n\nCamera: inside the tent, low, at his shoulder, the tent fabric framing the doorway.\n\nLighting: flat grey daylight from the doorway, the tent's interior dim.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled. Keep the number plate free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/19-2.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17.1-2.png"
+  ],
+  "character": "Bob"
+ },
+ {
+  "key": "s07b-bob-tent-front",
+  "why": "Kai r1: Bob in the tent looking out, the wank tank parked in front (from outside)",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s07b-bob-tent-front.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the man from the character reference sits just inside the open doorway of the tent from the reference image, looking up and out at the black car from the second reference image, which is parked hard against the tent's bay, its flank filling the left side of the frame in the near foreground. His mouth is pressed shut and his eyes are narrowed at the car.\n\nCamera: outside, low, near the car's rear wheel, looking past the car's flank into the tent doorway.\n\nLighting: flat overcast daylight, wet tarmac.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled. Keep the number plate free of readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/19-2.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17.1-2.png"
+  ],
+  "character": "Bob"
+ },
+ {
+  "key": "s08-aerial-two",
+  "why": "Kai r1: the car-park aerial recut with Bob sat just inside the tent and Tarquin stood by his car looking down at him",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s08-aerial-two.png",
+  "prompt": "Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone.\n\nScene: the same car park, from the same high camera position, as the first reference image. The black car is parked across two bays right beside the small blue and grey tent. A man stands beside the car's open driver's door, looking down at a second man who sits just inside the tent's open doorway, looking back up at him. Nobody else near them; the rest of the car park carries on.\n\nCamera: high, looking down, the car, the standing man and the tent small in the middle of the frame, the painted bays and wet tarmac around them.\n\nLighting: flat overcast daylight.\n\nDetails: fine natural grain, ordinary and unstyled. No readable lettering except the store fascia.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/17-3.png",
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/55-1.png"
+  ]
+ },
+ {
+  "key": "s09-wake-pov",
+  "why": "Kai r1: the waking shot (28) again without the beer",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s09-wake-pov.png",
+  "prompt": "A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, deep black shadows, no colour grading push.\n\nScene: the same view as the reference image: looking out from inside the tent at night, the door flap open onto the ruined car park, a fire burning in a drum outside, a figure standing by it. In the foreground lie a rumpled blanket and a sleeping bag. One hand reaches into the bottom of the frame and grips the edge of the blanket, empty, the knuckles tight.\n\nCamera: the same low point of view from the tent floor as the reference.\n\nLighting: the fire outside the only warm light, deep black shadows inside the tent.\n\nDetails: fine natural grain, ordinary and unstyled.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/28-1.5.png"
+  ]
+ },
+ {
+  "key": "s10-tent-sit",
+  "why": "Kai r1: shot 67 again without the beer",
+  "outPath": "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/s10-tent-sit.png",
+  "prompt": "A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, deep black shadows, no colour grading push.\n\nScene: the same view as the reference image: the man sits inside the open tent at night, wrapped in a blanket, a fire burning in a drum just outside, a figure standing by it in silhouette. Both of his hands are empty and clutch the blanket against his chest. His eyes are wide and fixed on the figure outside, his mouth slightly open.\n\nCamera: the same position as the reference, outside the tent looking in.\n\nLighting: the fire the only warm light, deep black shadows.\n\nDetails: real skin texture, fine natural grain, ordinary and unstyled.\n\nCompose for a 16:9 frame.\n\nThanks.",
+  "model": "Nano Banana 2.1",
+  "aspect": "16:9",
+  "numOutputs": 2,
+  "kind": "edit",
+  "referenceImages": [
+   "/mnt/d/badcode-videos/camping-story/timeline/r1/stills/ref/67-1.5.png"
+  ]
+ }
+]

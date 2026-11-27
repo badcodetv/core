@@ -96,7 +96,12 @@ PAUSE = lambda s: {'pause': s}
 
 # ---------- the cut ----------
 clip = lambda n, i, d: {'clip': n, 'in': i, 'min': d}
-card = lambda text, d=3.0: {'card': text, 'min': d}
+PICKED = ROOT / 'timeline' / 'r1' / 'stills' / 'picked'  # a picked still replaces its card: <key>.png
+
+
+def card(text, d=3.0, key=None):
+    f = PICKED / f'{key}.png' if key else None
+    return {'still': str(f), 'card': text, 'min': d, 'key': key} if f and f.exists() else {'card': text, 'min': d, 'key': key}
 black = lambda d: {'black': True, 'min': d}
 BEATS = [
     ('0', '🎵 Cue 1 · 2008', '1.wav'), ('1', '🎵 Cue 2 · The last good day', '2.wav'), ('2', '🔇 Silence · the crash', None),
@@ -104,9 +109,9 @@ BEATS = [
     ('6', '🎵 Cue 6 · Two bays', '6.wav'), ('7', '🎵 Cue 7 · The trip', '7.wav'), ('8', '🎵 Cue 8 · Five years later', '8.wav'),
     ('9', '🎵 Cue 9 · BAD C0DE', '9.wav')]
 G = [  # (beat, shots, lines, options)
-    ('0', [clip('0', 0, 2.667), card('NEW SHOT · the City of London, pushing in to the NatWest Tower', 3.5)], [new('b0-n1')], {}),
-    ('0', [clip('36', 0, 2.417), card('NEW SHOT · trading-floor mania (replaces the lift)')], [new('b0-n2')], {}),
-    ('0', [clip('39', 0, 2.333), card('NEW SHOT · trading-floor mania 2 (replaces the empty office)')], [new('b0-n3'), new('b0-n4')], {}),
+    ('0', [clip('0', 0, 2.667), card('NEW SHOT · the City of London, pushing in to the NatWest Tower', 3.5, key='s01-city-tower')], [new('b0-n1')], {}),
+    ('0', [clip('36', 0, 2.417), card('NEW SHOT · trading-floor mania (replaces the lift)', key='s02-floor-desk')], [new('b0-n2')], {}),
+    ('0', [clip('39', 0, 2.333), card('NEW SHOT · trading-floor mania 2 (replaces the empty office)', key='s03-floor-confetti')], [new('b0-n3'), new('b0-n4')], {}),
     ('0', [clip('2', 4.083, 3.917)], [new('b0-n5'), new('b0-n6')], {}),
     ('0', [clip('37', 0, 3.5)], [new('b0-n7')], {}),
     ('1', [clip('4', 0, 1.125), clip('49', 0, 1.792), clip('47', 5.333, 1.958), clip('4', 1.042, 2.292), clip('46', 1.667, 1.542),
@@ -119,20 +124,20 @@ G = [  # (beat, shots, lines, options)
      [kept('tarquin/2.wav', '2026. I run the largest private equity firm in the country. We buy mouldy old, empty social housing. Easy money, really.', 'Tarquin', at=0.3),
       kept('nell-kore-narrator/3.wav', "He's ditched the tie at least.", 'Narrator', at=13.0)], {}),
     ('3', [clip('9', 0, 5.0)], [kept('tarquin/3.wav', 'You lot are going to have a few more mates out here soon.', 'Tarquin'), new('b3-t1')], {}),
-    ('3', [clip('10', 2.417, 2.583), card('NEW SHOT · Tarquin in the car from a second angle, the smile gone')],
+    ('3', [clip('10', 2.417, 2.583), card('NEW SHOT · Tarquin in the car from a second angle, the smile gone', key='s04-car-angle')],
      [kept('tarquin/4.wav', 'It is a tad chilly though.', 'Tarquin', at=2.9)], {}),
-    ('3', [card('NEW SHOT · the car from outside, at night')], [new('b3-n1')], {}),
+    ('3', [card('NEW SHOT · the car from outside, at night', key='s05-car-outside')], [new('b3-n1')], {}),
     ('4', [clip('12', 0, 6.0)], [new('b4-n1'), PAUSE(1.0), new('b4-b1')], {}),
-    ('4', [card('NEW SHOT · the whole Waitrose car park, wide and full of cars (the twin of the ending wide)')], [new('b4-b2')], {}),
+    ('4', [card('NEW SHOT · the whole Waitrose car park, wide and full of cars (the twin of the ending wide)', key='s06-carpark-wide')], [new('b4-b2')], {}),
     ('4', [clip('14', 1.5, 5.292)], [new('b4-b3')], {}),
     ('5', [clip('15.1', 0, 6.0), clip('15.2', 0, 8.0), clip('15.3', 0, 6.0)], [new('b5-t1'), new('b5-t2'), new('b5-t3')], {}),
     ('6', [clip('17', 0, 6.583)], [new('b6-n1')], {}),
-    ('6', [card('NEW SHOT · Bob inside the tent looking out, the wank tank parked in front')], [new('b6-b1'), PAUSE(0.8), new('b6-b2')], {}),
+    ('6', [card('NEW SHOT · Bob inside the tent looking out, the wank tank parked in front', key='s07-bob-tent')], [new('b6-b1'), PAUSE(0.8), new('b6-b2')], {}),
     ('6', [clip('17.1', 0, 8.0)], [new('b6-n2'), PAUSE(0.8), new('b6-n3'), kept('tarquin/8.wav', 'Get a job, you fuckwit.', 'Tarquin')], {}),
     ('6', [clip('20', 0, 1.75)], [kept('tarquin/8.wav', "Even if I give you money, you'll shoot it up your arm.", 'Tarquin')], {}),
     ('6', [clip('19', 0, 4.0)], [kept('bob 2.wav', 'We should have left early. I should have.', 'Bob')], {}),
     ('6', [clip('55', 0.042, 3.5), clip('17', 0, 7.042)], [kept('nell-kore-narrator/4.wav', "Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them.", 'Narrator')], {}),
-    ('6', [card('NEW SHOT · Bob just inside the tent, Tarquin by his car looking down at him (the aerial, recut)')], [], {}),
+    ('6', [card('NEW SHOT · Bob just inside the tent, Tarquin by his car looking down at him (the aerial, recut)', key='s08-aerial-two')], [], {}),
     ('7', [clip('57', 0, 6.333), clip('22', 0, 8.0), clip('23', 3.0, 5.0), clip('24', 0, 4.0), clip('25', 0, 4.167)],
      [kept('nell-kore-narrator/5.wav', 'Tarquin, off to do some spiritual work. With drugs, of course.', 'Narrator', at=0.7),
       kept('tarquin/9.wav', "I cannot bloody meditate and I have never sat on a floor before, what am I, a dog? Oh, that's kicked in alright.", 'Tarquin', at=6.5),
@@ -144,8 +149,8 @@ G = [  # (beat, shots, lines, options)
      {'xfade': 0.6}),
     ('8', [clip('26', 0, 5.0)], [kept('nell-kore-narrator/5.wav', 'Surprise, surprise, he did not experience an ego death.', 'Narrator')], {}),
     ('8', [clip('27', 0, 3.042)], [new('b8-n1')], {}),
-    ('8', [card('NEW SHOT · Tarquin wakes in the tent, very shocked, no beer (re-make of 28)')], [new('b8-t1')], {}),
-    ('8', [card('NEW SHOT · re-make of 67 without the beer', 3.125), clip('29', 0, 3.625)], [], {}),
+    ('8', [card('NEW SHOT · Tarquin wakes in the tent, very shocked, no beer (re-make of 28)', key='s09-wake-pov')], [new('b8-t1')], {}),
+    ('8', [card('NEW SHOT · re-make of 67 without the beer', 3.125, key='s10-tent-sit'), clip('29', 0, 3.625)], [], {}),
     ('9', [clip('33', 1.292, 6.708), clip('68', 0, 8.0)], [], {}),
 ]
 
@@ -197,6 +202,11 @@ for k, c in enumerate(cuts):
                    '-map', '[v]', '-an', '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', f)
             else:
                 ff('-ss', s['in'], '-t', d, '-i', src, '-vf', f'{base},{GRADE},format=yuv420p', '-an', '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', f)
+        elif s.get('still'):  # a picked still, held with a slow push-in until its clip is made
+            n = max(2, int(round(d * FPS)))
+            ff('-loop', '1', '-i', s['still'], '-vf', f"scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,"
+               f"zoompan=z='1+0.06*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},format=yuv420p",
+               '-frames:v', n, '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', f)
         else:
             text = s.get('card', '')
             lines_txt = re.sub(r'(.{1,46})(\s|$)', r'\1\n', text).strip().replace("'", '’').replace(':', '\\:')
@@ -284,14 +294,14 @@ for bid, title, cue in BEATS:
                              **({'by': 'kai'} if x.get('new') else {})} for k, x in enumerate(ls)]})
 edl = {'sequence': 'camping-story-r1', 'title': 'Camping Story Timeline · r1', 'fps': FPS, 'total': TOTAL, 'beats': beats,
        'video': [{'file': str(CLIPS / f"{v['shot']['clip']}.mp4") if 'clip' in v['shot'] else 'card', 'start': v['start'], 'dur': v['dur'],
-                  'beat': v['beat'], 'source': (str(CLIPS / f"{v['shot']['clip']}.mp4") if 'clip' in v['shot'] else
+                  'beat': v['beat'], 'source': (str(CLIPS / f"{v['shot']['clip']}.mp4") if 'clip' in v['shot'] else v['shot'].get('still') or
                                                 (v['shot'].get('card') or 'black')), 'looped': bool(v['shot'].get('looped'))} for v in video],
        'audio': [{'track': 'A1', 'name': 'sfx-clip-sound'}, {'track': 'A2', 'name': 'vox-voices'}, {'track': 'A3', 'name': 'mus-score'}],
        'events': [{'stem': 'vox-voices', 't': x['t'], 'dur': round(x['dur'], 3), 'what': x['text'][:40], 'src': str(x['src'])} for x in vox]
                + [{'stem': 'sfx-clip-sound', 't': i[3], 'dur': round(i[2], 3), 'what': pathlib.Path(i[0]).name, 'src': str(i[0])} for i in s_items]
                + [{'stem': 'mus-score', 't': round(i[3], 3), 'dur': round(i[2], 3), 'what': pathlib.Path(i[0]).name, 'src': str(i[0])} for i in m_items],
        'flags': ["Cut r1 from Kai's 42 notes, assembled outside Premiere from Jack's source clips with a light grade towards his render "
-                 "(Jack's own grade and effects are not in it). Dark cards with yellow words are the new shots still to be made.",
+                 "(Jack's own grade and effects are not in it). The new shots are stills for now (my picks after the QA scan, with a slow push-in); they become clips once you've seen them.",
                  'Lines tagged "your words" are new takes in the locked voices; the rest are Jack\'s takes, cut at word boundaries.',
                  'The trip is not yet half as long: the plea still runs nearly whole (only "I only wanted to make money" is out). '
                  'Halving it means cutting its words, which Kai left for next round.']}

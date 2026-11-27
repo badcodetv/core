@@ -194,7 +194,6 @@ gold headlights at night, plate `BAD C0DE`).
 - A face asked to carry a smile it shouldn't (9-mug round 1: *"he should not be smiling"*).
 - Readable lettering beyond the three allowed items.
 - Wikimedia ShareAlike images as Flow references.
-- Generating new Camping imagery unasked — the frames are Jack's.
 
 ## Per part
 
