@@ -1,29 +1,31 @@
 {
-  "round": 17,
+  "round": 18,
   "plan": [
     {
-      "h": "New in r17: the short ending (from 5:30), as we scripted it",
+      "h": "r18: your 8 notes on the ending, all done",
       "items": [
-        "The generals' water plan (the submarine, then Sean's warehouse of computers under 'run hot... cooled with water').",
-        "Sean's screen: THINKING... MONITORING ALL FEDERAL FACILITIES. 'But... Karen knows how to keep somebody busy.'",
-        "Karen walks to the table and the generals lean in: 'The idea of a denial of service attack starts to take shape.'",
-        "The control room: Karen directs the world's complaint, the map lighting up; quick shots of people on phones; Sean: INCOMING CALLS 2,400,000,000, THINKING...",
-        "The Chief of Staff calls: 'Keep those complaints coming. It's working.' Karen nods.",
-        "The General sends Martha to the basement; the valve wheel turns.",
-        "Card: 'After quite some effort, and a revolution later... the humans prevail.' Then 'Ten years later.': Jack's statue of Karen in the phone box ('still on hold'). The end card.",
-        "The boom bap runs to the end again; no hold music."
+        "See Claude's read under each note."
       ]
     },
     {
       "h": "You decide",
       "items": [
-        "It came out about 1:12 before the card, not the 45 s we guessed: the lines run long as voiced (the first is 12 s). Trim words, or fine?",
-        "The phones montage reuses the two friends at Karen's phone box (Karen is in it, by day) and the Times Square crowd (with the PRESIDENT SACKED band). Fine for now, or new shots of strangers on phones?",
-        "Martha is at her desk in daylight (her unused talking take); the rest of the ending is night."
+        "Karen stands at the table rather than sitting down in the 'beckons Karen to a seat' shot (the clip didn't sit her down). Fine, or re-roll?",
+        "The film is 7:07 now (r17 was 6:53): the President's new line, the 'Ten years later' card and the longer statue.",
+        "Martha at her desk is still in daylight before the night basement."
       ]
     }
   ],
-  "replies": {},
+  "replies": {
+    "at7772": "Done: a new Situation Room: generals in uniform (a few civilians), who turn and whisper as they recognise her; the President turns to her. Then: 'The President beckons Karen to a seat at the table. \"We have work to do, to plan the fight back.\"' over Karen at the table with them. (The President is kept the same man, from behind.)",
+    "at8132": "Done: inside the data centre now: GPOM's plant-room hall of racks, then an aisle of racks (their cooler, greener look, untouched).",
+    "at8457": "Done: a memory of Karen in the phone box, not giving up (the evening talk shot), in the same washed-out flashback look as the morning after.",
+    "at8551": "Done: Karen and the generals at the table, talking, the generals leaning in and taking notes.",
+    "at8753": "Done: three new shots: Times Square, Paris (the Eiffel Tower down the street), Hong Kong (a tram behind), everyone on their phone. (Flow refused the first Hong Kong still; the second worked.)",
+    "at8867": "Done: the old reused shots are gone; it's the three cities now.",
+    "at9297": "Done: Martha herself turns the wheel now (her grey hair, black blouse and headset).",
+    "at9564": "Done: no narration after Martha. 'After quite some effort, and a revolution later... the humans prevail.' (6.6 s), then 'Ten years later' on its own card, then the statue, longer (7.8 s at 0.8x, still cut before the drone). The end card now reads 'They're counting on you to hang up.' then, two seconds later, 'Don't.'"
+  },
   "kai_round1": {
     "at1599": {
       "beat": "3",
@@ -2748,5 +2750,47 @@
       "note": "on line number three we need to say, but, pause, Karen knows how to keep somebody busy... we need to weave the phrase denial of service attack... The denial of service attack idea started to take shape. ... in the next line, within the hour, Karen is running the biggest complaint in history. I think we don't need to say nobody told Sean about her, we just say the General calls Martha the receptionist and tells her to go to the basement to turn the water off."
     }
   ],
-  "kai_round17_go": "OK, wonderful. I think between 8 and 9 ... a text-based transition scene that says, after quite some effort, and a revolution later, the humans prevail. And then we cut to the statue of Karen... we're very on purpose not showing you the whole of the revolution... please proceed on this basis. Let's get it cut so I can watch it."
+  "kai_round17_go": "OK, wonderful. I think between 8 and 9 ... a text-based transition scene that says, after quite some effort, and a revolution later, the humans prevail. And then we cut to the statue of Karen... we're very on purpose not showing you the whole of the revolution... please proceed on this basis. Let's get it cut so I can watch it.",
+  "kai_round17": [
+    {
+      "key": "at7772",
+      "tc": "00:05:23:20",
+      "note": "What might be quite funny here is as Karen enters the Situation Room, some of the generals recognize her from TV. Also, at this table, we should have more military people, less bureaucrats. And then we should say, you know, the president beckons for Karen to take a seat at the table. We have work to do to plan the fight back, is what he says."
+    },
+    {
+      "key": "at8132",
+      "tc": "00:05:38:20",
+      "note": "I think here it would make more sense to show the inside of a data center. I think if you look at the GitPush origin master clips, we've already got quite a lot of shots from inside the data center."
+    },
+    {
+      "key": "at8457",
+      "tc": "00:05:52:09",
+      "note": "I think here we show like a memory of Karen in the phone box, in the same way that like when Karen wakes up in the morning she sees a memory of herself throwing the phone in the river, we show a memory of her being persistent in the phone box."
+    },
+    {
+      "key": "at8551",
+      "tc": "00:05:56:07",
+      "note": "And then this I think this shot should be Karen and the general sat at the table just like talking Because we've just gone to the phone box, so to cut back to the situation room feels like it's working."
+    },
+    {
+      "key": "at8753",
+      "tc": "00:06:04:17",
+      "note": "I think here we should cut new footage of people picking phones up. Possibly we could go to like New York, Times Square, and like everybody's on their phone. Then we could cut to what is obviously Paris. Everyone's on their phone. Cut to Hong Kong. Everyone's on their phone. Just to give a sense of like on the streets, this is now global."
+    },
+    {
+      "key": "at8867",
+      "tc": "00:06:09:11",
+      "note": "So again, we're kind of reusing old footage here, we should be using footage of like people around the world all on the phone."
+    },
+    {
+      "key": "at9297",
+      "tc": "00:06:27:09",
+      "note": "I think the person turning this wheel should look more like Martha, and this person is not as large as Martha, so we need to make that consistent."
+    },
+    {
+      "key": "at9564",
+      "tc": "00:06:38:12",
+      "note": "OK, so I think that we need a longer cut of this outside. We should have 10 years later at the top of this rather than said. I like the idea that we don't speak from this point onwards. So it should just be, yeah, we don't need 10 years later. I think, you know, we do. We should say after quite some effort and a revolution later, the humans prevail that lasts for the same the right amount of time. We should add an extra bit of text to fade out, fade in 10 years later, fade out. Then we get to still on hold. And then at the last screen, it should say they're counting on you to hang up. Pause. Don't. Don't say please don't just say don't."
+    }
+  ]
 }

@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r18room-r18roomp-a.mp4",
+ "made": "2026-11-27T18:18:40+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The woman in the camel cardigan stands in the doorway between the two agents. Around the table the officers in uniform stare at her; one nudges the general next to him and whispers, nodding towards her as if he has seen her somewhere before, and another raises his eyebrows in recognition. The tall man standing in the foreground turns slightly and gestures with an open hand towards the empty chair at the table, inviting her in; she steps forward. Sound: a quiet room, a murmur, a chair creaking. No music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18roomp-a.jpg",
+ "why": "Kai's notes on cut r17 (2026-11-27) at 5:23: the generals recognise Karen from TV; the President beckons her to a seat",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18roomp-a.jpg",
+  "character": "Karen",
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r18room",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T18:12:17.864Z"
+ }
+}

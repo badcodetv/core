@@ -1,0 +1,29 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/video/r6-r18valve-r18valve-a.mp4",
+ "made": "2026-11-27T18:16:12+00:00",
+ "by": "claude",
+ "kind": "video",
+ "engine": "google-flow",
+ "tool": "scripts/scene/run.mts",
+ "model": "Omni 1.2 Flash",
+ "prompt": "The camera does not move. The heavy-set woman with grey hair heaves the red valve wheel round, hand over hand, turn after turn, puffing with the effort, until it will not turn any more; she stops, still holding it, and lets out a breath. The work lamp flickers once. Sound: old metal squealing, rushing water in the pipe slowing to a trickle and then silence. No dialogue, no music.\n\nThanks.",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18valve-a.jpg",
+ "why": "Kai's notes on cut r17 (2026-11-27) at 6:27: Martha herself turns the wheel",
+ "inputs": {
+  "start": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18valve-a.jpg",
+  "character": null,
+  "scene": "/home/kai/projects/badcode/badcode/docs/stories/karen/scenes/story-r6-shots",
+  "key": "r18valve",
+  "frame": 1,
+  "option": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "mode": "Frames",
+  "durationSeconds": 8,
+  "count": 1,
+  "resolution": "1080p (Flow upscale of the 720p render)",
+  "at": "2026-11-27T18:12:46.934Z"
+ }
+}

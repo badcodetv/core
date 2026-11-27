@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18valve-a-a.png",
+ "made": "2026-11-27T18:08:24.186Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nKeep the basement from the first image exactly: the brick wall, the caged work lamp, the iron pipes and the big red valve wheel. Put the woman from the second image there: the same heavy-set receptionist with her grey hair pulled back, her black blouse and her telephone headset still on, seen from the side, both hands gripping the red wheel and heaving it round, her face set with effort. Same camera distance as the first image, so her face and shoulders are in frame.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai on r17 at 6:27: the person turning the wheel should look like Martha (she is larger)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16valve-a-a.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r16valve-a-a.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/martha-close-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "67c29761-c0b3-4963-89fc-09d31fd592bd"
+}

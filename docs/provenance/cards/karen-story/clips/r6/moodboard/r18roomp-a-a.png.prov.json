@@ -1,0 +1,25 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18roomp-a-a.png",
+ "made": "2026-11-27T18:11:06.435Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (edit)",
+ "prompt": "Keep the first image exactly as it is, every person and detail, the film grain and colour. Change only the tall man in the dark suit standing with his back to us in the foreground: make him the same man as the one standing in the foreground of the second image, a tall Black man with close-cropped greying hair, broad shoulders, the same dark suit, still seen only from behind.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "r18 room still: keep the man standing at the head of the table the same as in the film (the Black man in the dark suit, from behind)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18room-a-b.png",
+ "inputs": {
+  "references": [
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18room-a-b.png",
+   "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r13room-a-a.png"
+  ],
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "cdf20b39-5125-4fe1-9381-b1c27f3b0913"
+}

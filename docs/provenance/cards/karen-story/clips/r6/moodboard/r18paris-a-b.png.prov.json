@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18paris-a-b.png",
+ "made": "2026-11-27T18:07:09.076Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nEarly morning, present day, Paris: a crowded cafe terrace and pavement on a Haussmann boulevard with the Eiffel Tower rising clearly at the end of the street. Every person in the frame, waiters in long aprons, a woman with a baguette under her arm, men at the little round tables, a cyclist stopped at the kerb, holds a mobile phone to their ear and talks into it at once, gesturing, exasperated. Eye level, wide.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai on r17 at 6:04: then what is obviously Paris: everyone on their phone",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "c7494487-c78b-4744-9b43-13d1874609c1"
+}

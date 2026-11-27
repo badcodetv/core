@@ -230,5 +230,13 @@
   "url": "http://localhost:8765/t/karen/story/",
   "what": "cut r17: the short ending (ending-r16.md draft 4); 6:53; local timeline",
   "rebuild": "KAREN_SEG=~/.cache/karen-seg-r17 python3 scripts/karen/story-cut-r17.py"
+ },
+ {
+  "at": "2026-11-27T18:32:48+00:00",
+  "stage": "timeline",
+  "round": 18,
+  "url": "http://localhost:8765/t/karen/story/",
+  "what": "cut r18: Kai's 8 notes on r17's ending; 7:07; local timeline",
+  "rebuild": "KAREN_SEG=~/.cache/karen-seg-r18 python3 scripts/karen/story-cut-r18.py"
  }
 ]

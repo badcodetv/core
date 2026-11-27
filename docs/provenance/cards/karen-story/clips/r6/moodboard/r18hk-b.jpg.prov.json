@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18hk-b.jpg",
+ "made": "2026-11-27T18:22:04+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "pick (jpg of r18hk-a-b.png)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18hk-a-b.png",
+ "why": "r18: Hong Kong option B (Flow refused option A as a start frame)"
+}

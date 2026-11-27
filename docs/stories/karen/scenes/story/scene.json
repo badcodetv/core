@@ -8,9 +8,9 @@
   "premiere_project": "/mnt/d/badcode-videos/karen-story/Karen vid.prproj",
   "source_sequence": "Karen v4",
   "cut": {
-    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r17/edl.json",
-    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r17/preview.mp4",
-    "script": "KAREN_SEG=~/.cache/karen-seg-r17 python3 scripts/karen/story-cut-r17.py  (r17, 2026-11-27: the short ending, ending-r16.md draft 4)",
+    "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r18/edl.json",
+    "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r18/preview.mp4",
+    "script": "KAREN_SEG=~/.cache/karen-seg-r18 python3 scripts/karen/story-cut-r18.py  (r18, 2026-11-27: Kai's 8 notes on the r17 ending)",
     "previous": {
       "edl": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/edl.json",
       "preview": "/mnt/d/badcode-videos/karen-story/timeline/cut-r14/preview.mp4",

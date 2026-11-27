@@ -1,0 +1,20 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18nyc-a-b.png",
+ "made": "2026-11-27T18:06:54.317Z",
+ "by": "claude",
+ "engine": "google-flow",
+ "kind": "image",
+ "tool": "flow_queue (image)",
+ "prompt": "STYLE LOCK (keep identical every time):\n\nCapture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.\n\nPresent-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.\n\nTexture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.\n\nColor: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).\n\nOptics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).\n\nExposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.\n\nOutput: high detail, natural imperfections, candid snapshot energy.\n\nExclusions: no added text, no logos, no watermark, no AI \"hyper-sharp HDR\" look, no historical setting/era shift.\n\nNight, present day, the middle of Times Square in Manhattan, packed with people under the glow of giant screens that show only abstract colour, nothing readable. Every single person in the crowd, office workers, tourists, a cab driver leaning out of his yellow cab, a street vendor, is holding a mobile phone to their ear and talking into it at the same moment, some angry, some patient, some jabbing a finger. Eye level, wide, deep crowd.\n\nThanks.",
+ "model": "Nano Banana Pro",
+ "why": "Kai on r17 at 6:04: new footage of people picking phones up, starting in Times Square: everybody on their phone",
+ "inputs": {
+  "character": null
+ },
+ "settings": {
+  "aspect": "16:9",
+  "numOutputs": 2
+ },
+ "source_id": "0499b1ed-6566-4dca-bc67-a8badeca5547"
+}

@@ -1,0 +1,11 @@
+{
+ "schema": "badcode.prov/1",
+ "file": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18paris-a.jpg",
+ "made": "2026-11-27T18:09:47+00:00",
+ "by": "claude",
+ "kind": "image",
+ "engine": "ffmpeg",
+ "tool": "pick (jpg of r18paris-a-a.png)",
+ "parent": "/mnt/d/badcode-videos/karen-story/clips/r6/moodboard/r18paris-a-a.png",
+ "why": "r18 pick (Kai's notes on r17)"
+}
